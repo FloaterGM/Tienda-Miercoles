@@ -1,16 +1,14 @@
-let nombre_producto = 'Batimóvil'
-let precio_producto = 40000
-let peso_producto = 18.5
-let tiene_descuento = true
-let descripcion_producto = 'Batimóvil a escala'
-let telefono_vendedor = "3225962363"
+//Controlando etiquetas
 
-const NOMBRE_CLIENTE="Juan José"
+let etq_titulo = document.getElementById('millos')
 
-//SALIDAS
+etq_titulo.textContent = "KNY (Kimetsu No Yaiba)"
 
-console.log(nombre_producto)
-console.log("Su nombre es: " + NOMBRE_CLIENTE)
-console.log("El precio de su producto es: " + precio_producto)
-console.log(nombre_producto)
-console.log(nombre_producto)
+console.log(etq_titulo.classList)
+
+let etq_foto = document.getElementById('foto')
+
+etq_foto.src = "/img/descarga.jpg" 
+
+etq_titulo.classList.add('text-center')
+etq_titulo.classList.add('text-light')
