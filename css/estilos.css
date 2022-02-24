@@ -1,0 +1,12 @@
+.fondo{
+    background-color: lightgray;
+}
+
+.fondo_cabecera{
+    background-color: black;
+}
+
+.imagen_cabecera{
+    width: 100%;
+    height: 450px;
+}
