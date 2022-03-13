@@ -1,5 +1,7 @@
 .fondo{
     background-color: lightgray;
+    background-image: url("/img/fondo.png");
+    height: fit-content;
 }
 
 .fondo_cabecera{
@@ -8,5 +10,61 @@
 
 .imagen_cabecera{
     width: 100%;
-    height: 450px;
+}
+
+.navbar__desing{
+    background-color: #855890;
+    font-family: 'Fugaz One', cursive;
+    font-size: 1.4em;
+}
+
+.navbar__desing--title{
+    font-size: 1.5em;
+    color: white;
+    margin-right: 30px ;
+    text-decoration: none;
+}
+
+.navbar__desing--title:hover{
+    color: white;
+}
+
+.fstdiv__title{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: block;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+    font-size: 300%;
+}
+
+.div__historia{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.div__fondo--personajes{
+    background-color: #855890;
+    height: fit-content;
+}
+
+.btn{
+    background: #855890;
+}
+
+.btn:hover{
+    background: #6f3c7c;
+}
+
+.fondo__tarjeta{
+    background-color: lightgray;
+}
+
+.div__datoscuriosos{
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.fondo__pagina{
+    background-image:url("/img/fondo.png");
 }

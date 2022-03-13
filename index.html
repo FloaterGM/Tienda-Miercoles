@@ -10,14 +10,17 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__bounce">
+    <nav class="navbar__desing navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="titnav">KNY (Kimetsu No Yaiba)</a>
+        <a class="navbar__desing--title" href="#">Kimetsu No Yaiba</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,51 +28,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/tienda.html">Tienda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
   </header>
   <main>
     <div class="fondo_cabecera container-fluid">
-      <img class="imagen_cabecera" src="/img/1366_2000.jpeg" alt="#">
     </div>
 
     <div class="fondo container-fluid">
       <div class="row">
-        <div class="col-3">
-          <p>
-          <h1 class="justify-content">HISTORIA</h1>
-          </p>
+        <div class="col-lg-3">
+          <h1 class="fstdiv__title">HISTORIA</h1>
         </div>
-        <div class="col-9">
-          Ambientada en la era Taisho, la historia se centra en Tanjirō Kamado, un joven inteligente y de buen corazón
+        <div class="col-lg-9 div__historia">
+          <b> en la era Taisho, la historia se centra en Tanjirō Kamado, un joven inteligente y de buen corazón
           que vive con su familia en las montañas. Se ha convertido en la única fuente de ingresos de su familia tras el
           fallecimiento de su padre, haciendo viajes al pueblo cercano para vender carbón y vegetales. Sin embargo, toda
           su vida cotidiana cambia cuando en uno de estos viajes, regresa a casa solo para descubrir que su familia ha
@@ -86,17 +61,80 @@
           miembro del Cuerpo de Demon Slayers, para que éste le enseñe a convertirse también en un asesino de demonios y
           comienza su búsqueda para ayudar a su hermana a convertirse nuevamente en humana y vengar la muerte del resto
           de su familia.
+          </b>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid div__fondo--personajes">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card" style="width: 15rem; margin: auto;">
+              <img src="img/tanjiro.jpg" class="card-img-top" alt="...">
+              <div class="card-body fondo__tarjeta">
+                <h5 class="card-title">TANJIRO</h5>
+                <a href="https://kimetsu-no-yaiba.fandom.com/es/wiki/Tanjiro_Kamado" class="btn">Conocer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 15rem; margin: auto;" >
+              <img src="img/nezuko.jpg" class="card-img-top" alt="...">
+              <div class="card-body fondo__tarjeta">
+                <h5 class="card-title">NEZUKO</h5>
+                <a href="https://kimetsu-no-yaiba.fandom.com/es/wiki/Nezuko_Kamado" class="btn">Conocer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 15rem; margin: auto;">
+              <img src="img/zenitsu.jpg" class="card-img-top" alt="...">
+              <div class="card-body fondo__tarjeta">
+                <h5 class="card-title">ZENITSU</h5>
+                <a href="https://kimetsu-no-yaiba.fandom.com/es/wiki/Zenitsu_Agatsuma" class="btn">Conocer mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 15rem; margin: auto;">
+              <img src="img/inosuke.jpg" class="card-img-top" alt="...">
+              <div class="card-body fondo__tarjeta">
+                <h5 class="card-title">INOSUKE</h5>
+                <a href="https://kimetsu-no-yaiba.fandom.com/es/wiki/Inosuke_Hashibira" class="btn">Conocer mas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="fondo_cabecera container-fluid">
+    </div>
+
+    <div class="fondo container-fluid">
+      <div class="row">
+        <div class="col-lg-9 div__datoscuriosos">
+          <p>
+          <b>
+            -Actualmente no conocemos ni el nombre, ni el aspecto físico, ni el género del autor <br>
+            -Originalmente esta obra anime se iba a titular Kisatsu No Yaiba <br>
+            -Este manga es el único en toda la historia de Japón que ocupó todos los puestos del Top 10 <br>
+            -El protagonista de esta serie se caracteriza por llevar siempre a cuestas una caja de madera,
+             siempre la lleva consigo para que su hermana pueda dormir durante el día. <br>
+            -La máscara que utiliza Urokodaki en la serie anime es la máscara Tengu.
+             Estas eran criaturas sobrenaturales de la mitología japonesa que eran consideradas como un tipo de dios. <br>
+            -Ya muchos saben que para convertirse en pilar se necesita derrotar a una de las Doce Lunas Demoníacas o derrotar a 50 demonios,
+            y luego pasar por un largo entrenamiento de 5 años para prepararse <br>
+          </b>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <h1 class="fstdiv__title">DATOS CURIOSOS</h1>
         </div>
       </div>
     </div>
   </main>
-  <footer>
+  <footer style="background-color: black;">
+
+    <p style="text-align: center; color: white;"><b>@Copyright victor</b></p>
 
   </footer>
-
-  <script src="/js/controladorTienda.js"></script>
-  <script src="/js/llenadoTienda.js"></script>
-
 </body>
-
 </html>
