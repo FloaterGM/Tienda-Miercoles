@@ -10,9 +10,6 @@ let productos = [
         { img: "/img/inosuke.jpg", nombre: "Album KNY", precio: 25000 },
         { img: "/img/inosuke.jpg", nombre: "Stickers KNY", precio: 5000 },
         { img: "/img/inosuke.jpg", nombre: "Manillas KNY", precio: 10000 }
-        
-
-    
 ]
 
 let fila = document.getElementById("fila");
@@ -22,7 +19,6 @@ productos.forEach(function(producto){
     let columna = document.createElement('div');
 
     columna.classList.add('col');
-
 
     let tarjeta = document.createElement('div');
 
@@ -37,7 +33,7 @@ productos.forEach(function(producto){
 
     let titulo = document.createElement('h4');
 
-    titulo.classList.add('fw-bold');
+    titulo.classList.add('card-title');
     titulo.classList.add('text-center');
     titulo.textContent = producto.nombre;
 
@@ -46,7 +42,4 @@ productos.forEach(function(producto){
 
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
-    
-
-
 })
