@@ -1,6 +1,8 @@
-.fondo{
-    background-color: lightgray;
+body{
     background-image: url("/img/fondo.png");
+}
+
+.fondo{
     height: fit-content;
 }
 
@@ -48,12 +50,15 @@
     height: fit-content;
 }
 
-.btn{
-    background: #855890;
+.boton__tarjeta{
+    background: #A27CAC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn:hover{
-    background: #6f3c7c;
+.boton__tarjeta:hover{
+    background: #855F8F;
 }
 
 .fondo__tarjeta{
@@ -66,5 +71,24 @@
 }
 
 .fondo__pagina{
-    background-image:url("/img/fondo.png");
+}
+
+.tarjeta__producto{
+    border-radius: 10%;
+    background-color: #6f3c7c;
+    margin-top: 2em;
+}
+
+.boton__personajes{
+    background:#6f3c7c ;
+}
+
+.boton__personajes:hover{
+     background: #855890; 
+}
+
+footer{
+    margin-top: 3em;
+    height: 5em;
+    background-color: #855890;
 }
