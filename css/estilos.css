@@ -74,7 +74,7 @@ body{
 }
 
 .tarjeta__producto{
-    border-radius: 10%;
+    border-radius: 1em;
     background-color: #6f3c7c;
     margin-top: 2em;
 }
@@ -85,6 +85,16 @@ body{
 
 .boton__personajes:hover{
      background: #855890; 
+}
+
+.boton__modal{
+    background: #A27CAC;
+    color: white;
+}
+
+.boton__modal:hover{
+    background: #855F8F;
+    color: white;
 }
 
 footer{

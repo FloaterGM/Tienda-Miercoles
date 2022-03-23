@@ -1,15 +1,15 @@
 let productos = [
      
-        { img: "img/llaveros.jpg", nombre: "Llaveros KNY", desc: "Llaverito personalizado de KNY", precio: 15000 },
-        { img: "img/katana.jpg", nombre: "Katana KNY",  desc: "Katana personalizada de tamaño pequeño", precio: 25000 },
-        { img: "img/camiseta.jpg", nombre: "Camiseta Estampada",  desc: "Camisetas estamapadas con diseños de KNY", precio: 45000 },
-        { img: "img/buzo.jpg", nombre: "Buzo Estampado",  desc: "Buzos estamapados con diseños de KNY", precio: 70000 },
-        { img: "img/figuritas.jpg", nombre: "Figuritas Representativas",  desc: "Figuritas de los personajes del anime", precio: 60000 },
-        { img: "img/aretes.jpg", nombre: "Aretes Representativos (Tanjiro)",  desc: "Aretes de Kamado Tanjiro", precio: 12000 },
-        { img: "img/posters.jpg", nombre: "Posters KNY",  desc: "Posters representativos del anime", precio: 10000 },
-        { img: "img/album.jpg", nombre: "Album KNY",  desc: "Album de fotos con portada de KNY", precio: 25000 },
-        { img: "img/estampitas.jpg", nombre: "Stickers KNY",  desc: "Estampitas del anime", precio: 5000 },
-        { img: "img/collar.jpg", nombre: "Collar KNY",  desc: "Collar representativo", precio: 15000 }
+        { foto: "img/llaveros.jpg", nombre: "Llaveros KNY", desc: "Llaverito personalizado de KNY", precio: 15000 },
+        { foto: "img/katana.jpg", nombre: "Katana KNY",  desc: "Katana personalizada de tamaño pequeño", precio: 25000 },
+        { foto: "img/camiseta.jpg", nombre: "Camiseta Estampada",  desc: "Camisetas estamapadas con diseños de KNY", precio: 45000 },
+        { foto: "img/buzo.jpg", nombre: "Buzo Estampado",  desc: "Buzos estamapados con diseños de KNY", precio: 70000 },
+        { foto: "img/figuritas.jpg", nombre: "Figuritas Representativas",  desc: "Figuritas de los personajes del anime", precio: 60000 },
+        { foto: "img/aretes.jpg", nombre: "Aretes Representativos (Tanjiro)",  desc: "Aretes de Kamado Tanjiro", precio: 12000 },
+        { foto: "img/posters.jpg", nombre: "Posters KNY",  desc: "Posters representativos del anime", precio: 10000 },
+        { foto: "img/album.jpg", nombre: "Album KNY",  desc: "Album de fotos con portada de KNY", precio: 25000 },
+        { foto: "img/estampitas.jpg", nombre: "Stickers KNY",  desc: "Estampitas del anime", precio: 5000 },
+        { foto: "img/collar.jpg", nombre: "Collar KNY",  desc: "Collar representativo", precio: 15000 }
 ]
 
 let fila = document.getElementById("fila");
@@ -27,11 +27,11 @@ productos.forEach(function(producto){
     tarjeta.classList.add('tarjeta__producto');
     
 
-    let img = document.createElement('img');
+    let foto = document.createElement('img');
     
-    img.classList.add('card-img-top');
-    img.classList.add('p-4');
-    img.src = producto.img;
+    foto.classList.add('card-img-top');
+    foto.classList.add('p-4');
+    foto.src = producto.foto;
 
     let cuerpo = document.createElement('div');
 
@@ -50,7 +50,7 @@ productos.forEach(function(producto){
     descripcion.setAttribute('style', 'color: white; text-align: center;');
     descripcion.textContent = producto.desc;
 
-    let precio = document.createElement('p');
+    let precio = document.createElement('h5');
 
     precio.classList.add('precio__tarjeta');
     precio.setAttribute('style', 'color: white; text-align: center; font-weight: bolder; font-size: 2em;');
@@ -63,14 +63,37 @@ productos.forEach(function(producto){
     boton.classList.add('boton__tarjeta');
     boton.textContent = 'Ver Producto';
 
-    tarjeta.appendChild(img);
     tarjeta.appendChild(cuerpo);
 
+
+    cuerpo.appendChild(foto);
     cuerpo.appendChild(titulo);
     cuerpo.appendChild(descripcion);
     cuerpo.appendChild(precio);
     cuerpo.appendChild(boton);
+    
 
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
 })
+
+//Rutina para ampliar info del producto
+
+let fila_contenedora = document.getElementById('fila');
+fila_contenedora.addEventListener('click', function(evento){
+    if(evento.target.classList.contains('btn')){
+
+        let imagen_info = document.getElementById('foto_info');
+        let titulo_info = document.getElementById('titulo_info');
+
+        console.log(evento.target.parentElement.querySelector('img'));
+
+        imagen_info.src = evento.target.parentElement.querySelector('img').src;
+
+        titulo_info.textContent = evento.target.parentElement.querySelector('h4').textContent;
+
+        let informacion = new bootstrap.Modal(document.getElementById('modal_info'));
+        informacion.show();
+
+    }
+});
