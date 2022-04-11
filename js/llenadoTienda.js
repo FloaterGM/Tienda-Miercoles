@@ -1,4 +1,5 @@
-let productos = [
+export function llenado_tienda(){
+    let productos = [
      
         { foto: "img/llaveros.jpg", nombre: "Llaveros KNY", desc: "Llaverito personalizado de KNY", precio: 15000 },
         { foto: "img/katana.jpg", nombre: "Katana KNY",  desc: "Katana personalizada de tamaño pequeño", precio: 25000 },
@@ -76,24 +77,7 @@ productos.forEach(function(producto){
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
 })
+}
 
-//Rutina para ampliar info del producto
 
-let fila_contenedora = document.getElementById('fila');
-fila_contenedora.addEventListener('click', function(evento){
-    if(evento.target.classList.contains('btn')){
 
-        let imagen_info = document.getElementById('foto_info');
-        let titulo_info = document.getElementById('titulo_info');
-
-        console.log(evento.target.parentElement.querySelector('img'));
-
-        imagen_info.src = evento.target.parentElement.querySelector('img').src;
-
-        titulo_info.textContent = evento.target.parentElement.querySelector('h4').textContent;
-
-        let informacion = new bootstrap.Modal(document.getElementById('modal_info'));
-        informacion.show();
-
-    }
-});

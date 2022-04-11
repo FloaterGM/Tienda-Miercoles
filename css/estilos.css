@@ -31,6 +31,11 @@ body{
     color: white;
 }
 
+.contenedor__productos{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 .fstdiv__title{
     margin-top: 3em;
     margin-bottom: 3em;
@@ -87,18 +92,17 @@ body{
      background: #855890; 
 }
 
-.boton__modal{
-    background: #A27CAC;
-    color: white;
+/*carrito*/
+
+.cant__productos{
+    color: #F9C2FE;
 }
 
-.boton__modal:hover{
-    background: #855F8F;
-    color: white;
-}
+/*footer*/
 
 footer{
     margin-top: 3em;
     height: 5em;
     background-color: #855890;
 }
+

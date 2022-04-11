@@ -1,0 +1,25 @@
+/*Modal*/
+
+.precio__modal{
+    color: #6f3c7c;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.titulo__modal{
+    font-family: 'Fugaz One', cursive;
+}
+
+.boton__modal{
+    background: #A27CAC;
+    color: white;
+}
+
+.boton__modal:hover{
+    background: #855F8F;
+    color: white;
+}
+
+.cantidad__modal{
+    width: 30%;
+}
