@@ -55,7 +55,7 @@ productos.forEach(function(producto){
 
     precio.classList.add('precio__tarjeta');
     precio.setAttribute('style', 'color: white; text-align: center; font-weight: bolder; font-size: 2em;');
-    precio.textContent = '$' + producto.precio;
+    precio.textContent = producto.precio;
 
 
     let boton = document.createElement('a');

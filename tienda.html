@@ -33,9 +33,9 @@
               <a class="nav-link active" aria-current="page" href="/tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" id="ver_carrito" href="#">
                 <i class="bi bi-cart carrito__navbar">
-                  <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill cant__productos invisible">
+                  <span id="capsula" class="position-absolute top-10 start-10 translate-middle badge rounded-pill cant__productos invisible">
                     99+
                   </span>
                 </i>
@@ -72,7 +72,7 @@
                   <p id="precio_producto" class="precio__modal"></p>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label"></label>
-                    <input type="number" class="form-control" id="cantidad_producto" placeholder="Cantidad" >
+                    <input type="number" class="form-control" id="cantidad_producto" placeholder="Cantidad" value="1" min="1">
                   </div> 
                 </div>
               </div>
@@ -87,7 +87,27 @@
     </div>
   </section>
   
+  <section>
+    <div class="modal fade" id="resumen_compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tienda KNY</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="base_carro">
 
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
