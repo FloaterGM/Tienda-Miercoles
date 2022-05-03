@@ -53,10 +53,6 @@ boton_v_carrito.addEventListener('click',function(){
 
     base.innerHTML=''
 
-    
-
-   
-
     productos.forEach(function(producto){
 
         let fila=document.createElement('div');
@@ -81,7 +77,7 @@ boton_v_carrito.addEventListener('click',function(){
         cantidad.textContent="Cantidad: " + producto.cantidad;
         
         let precio=document.createElement('p');
-        precio.classList.add('precio__tarjeta');
+        precio.classList.add('precio');
         precio.textContent="Subtotal: " + (producto.precio * parseInt(producto.cantidad));
 
 
@@ -98,5 +94,38 @@ boton_v_carrito.addEventListener('click',function(){
     })
 
     resumen_compra.show();
+})
+
+let modal_contenedor = document.getElementById('ver_carrito');
+let total = document.getElementById('total_modal');
+
+modal_contenedor.addEventListener('click', function(){
+
+    let suma_total = productos.map(producto => producto.precio).reduce((prev, curr) => parseInt(prev) + parseInt(curr));
+
+    
+
+    total.textContent = suma_total;
+
+    document.getElementById('conversor').value = 0;
+})
+
+let convertir = document.getElementById('conversor');
+convertir.addEventListener('click',function(){
+    let dolares, pesos;
+    if(document.getElementById('conversor').value == 0){
+            dolares = parseInt(total.textContent) / 3959.67;
+            let dol = dolares.toFixed(2)
+            document.getElementById('conversor').value = 1;
+
+            total.textContent = dol;
+    }
+    else{
+            pesos = parseInt(total.textContent) * 3959.67;
+            let pes = pesos.toFixed(2)
+            document.getElementById('conversor').value = 0;
+
+            total.textContent = pes;
+    }
 })
 
