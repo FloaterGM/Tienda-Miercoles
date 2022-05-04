@@ -137,3 +137,12 @@ footer{
     width: 100%;
 }
 
+.navbar__cerrar{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__cerrar:hover{
+    color: white;
+}
+
