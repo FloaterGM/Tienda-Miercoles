@@ -1,8 +1,8 @@
 import { getAuth, createUserWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
 
 let boton=document.getElementById('boton_registro')
-let modalregistro=new bootstrap.Modal(document.getElementById('mensaje_info'))
-let textoModal=document.getElementById('mensaje_modal_info')
+let modalregistro=new bootstrap.Modal(document.getElementById('mensaje_info'));
+let textoModal=document.getElementById('mensaje_modal_info');
 
 boton.addEventListener('click',function(evento){
 

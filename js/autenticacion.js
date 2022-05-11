@@ -11,7 +11,7 @@ onAuthStateChanged(auth, (user) => {
 
         usuario.textContent = user.email + ", ";
 
-        
+
         cerrar.classList.remove('invisible');
         cerrar.textContent = "Cerrar sesion";
     }
@@ -22,7 +22,7 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-cerrar.addEventListener('click', function(){
+cerrar.addEventListener('click', function () {
     signOut(auth).then(() => {
         cerrar.classList.add('invisible')
     }).catch((error) => {
